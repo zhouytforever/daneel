@@ -18,7 +18,6 @@ target/
 *.patch
 *.tmp
 # system ignore
-.DS_Store
 Thumbs.db
 # package ignore (optional)
 # *.jar
@@ -26,3 +25,19 @@ Thumbs.db
 # *.zip
 # *.tar
 # *.tar.gz
+
+.DS_Store
+node_modules/
+dist/
+dist-beta/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
