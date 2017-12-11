@@ -1,11 +1,11 @@
 {
-  "name": "model2view-generator",
-  "version": "1.0.0",
-  "description": "A cli tool for you to create a CURD business view in vue",
+  "name": "daneel",
+  "version": "0.0.1",
+  "description": "A cli tool for you to create a module of code from a template (e.g CURD)",
   "bin": {
-    "model2view": "bin/model2view"
+    "daneel": "bin/daneel"
   },
-  "author": "yuting.zhou",
+  "author": "zhouytforever",
   "license": "MIT",
   "dependencies": {
     "async": "^2.6.0",
