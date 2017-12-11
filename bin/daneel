@@ -42,7 +42,7 @@ help()
  */
 
 let template = program.args[0]
-const clone = true
+const clone = program.args[1] || false
 
 /**
  * Padding.
