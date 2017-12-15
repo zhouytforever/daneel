@@ -21,7 +21,7 @@ $ npm install -g daneel
 
 After you've created a project, you need lots of the same code for business modules
 ``` bash
-$ cd <Your business directory> 
+$ cd <Your business directory>
 $ daneel <github-name>/<template-project-name>[#<branch-name>]
 $ Input your property pairs (label and variable)
 ```
@@ -31,7 +31,7 @@ $ Input your property pairs (label and variable)
 
 ``` bash
 $ cd ./src/view/TestDaneel
-$ daneel zhouytforever/CURD#iview
+$ daneel zhouytforever/daneel-template#iview
 $ Input my property pairs (label and variable)
 ```
 
