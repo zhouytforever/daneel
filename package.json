@@ -21,6 +21,8 @@
     "read-metadata": "^1.0.0",
     "request": "^2.83.0",
     "semver": "^5.4.1",
+    "tildify": "^1.2.0",
+    "user-home": "^2.0.0",
     "validate-npm-package-name": "^3.0.0"
   },
   "engines": {
