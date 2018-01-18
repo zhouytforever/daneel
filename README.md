@@ -52,11 +52,11 @@ $ Input my property pairs (label and variable)
 
 1. Your template repository or directory is all you'll get.
 2. All you need to care about is several tags below:
-    - `{{label}}`: A label inputed in daneel-cli.
-    - `{{variable}}`: A variable inputed in daneel-cli.
-    - `{{#pairs}}`: An array contains `{{label}}` and `{{variable}}` just like `[{label: Name, variable: name}]`.
-    - `{{pairs}}`: The end tag of `{{#pairs}}`.
-3. You can write all the tags above everywhere in your template.
+    - `{{label}}` : A label inputed in daneel-cli.
+    - `{{variable}}` : A variable inputed in daneel-cli.
+    - `{{#pairs}}` : An array contains `{{label}}` and `{{variable}}` just like `[{label: Name, variable: name}]`.
+    - `{{pairs}}` : The end tag of `{{#pairs}}`.
+3. You can write all the tags as a group wherever in your template.
 
 ### Example
 
