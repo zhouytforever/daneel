@@ -20,9 +20,24 @@ $ npm install -g daneel
 ### Usage
 
 After you've created a project, you need lots of the same code for business modules
+- From official template repository
+``` bash
+$ cd <Your business directory>
+$ daneel daneel-template[#<branch-name>]
+$ Input your property pairs (label and variable)
+```
+
+- From other template repository
 ``` bash
 $ cd <Your business directory>
 $ daneel <github-name>/<template-project-name>[#<branch-name>]
+$ Input your property pairs (label and variable)
+```
+
+- From local template
+``` bash
+$ cd <Your business directory>
+$ daneel <Your template directory (absolute path or relative path)>
 $ Input your property pairs (label and variable)
 ```
 >More usage: [download-git-repo](https://github.com/flipxfx/download-git-repo)
@@ -33,6 +48,51 @@ $ Input your property pairs (label and variable)
 $ cd ./src/view/TestDaneel
 $ daneel zhouytforever/daneel-template#iview
 $ Input my property pairs (label and variable)
+```
+### How to custom your own template
+
+1. Your template repository or directory is all you'll get.
+2. All you need to care about is several tags below:
+- `{{label}}`: A label inputed in daneel-cli.
+- `{{variable}}`: A variable inputed in daneel-cli.
+- `{{#pairs}}`: An array contains `{{label}}` and `{{variable}}` just like `[{label: Name, variable: name}]`.
+- `{{}}`: The end tag of `{{#pairs}}`.
+3. You can write all the tags above everywhere in your template.
+
+### Example
+
+Template you written :
+```bash
+  <section class="search-panel">
+    <Form inline :label-width="100">
+      {{#pairs}}
+      <FormItem label="{{label}}" prop="{{variable}}">
+        <Input v-model="searchCondition.{{variable}}" />
+      </FormItem>
+      {{/pairs}}
+      <FormItem>
+        <Button type="primary" @click="onSearch">查询</Button>
+        <Button @click="() => { this.onSearch(true) }">重置</Button>
+      </FormItem>
+    </Form>
+  </section>
+```
+Code daneel generated :
+```bash
+  <section class="search-panel">
+    <Form inline :label-width="100">
+      <FormItem label="名字" prop="name">
+        <Input v-model="searchCondition.name" />
+      </FormItem>
+      <FormItem label="性别" prop="sex">
+        <Input v-model="searchCondition.sex" />
+      </FormItem>
+      <FormItem>
+        <Button type="primary" @click="onSearch">查询</Button>
+        <Button @click="() => { this.onSearch(true) }">重置</Button>
+      </FormItem>
+    </Form>
+  </section>
 ```
 
 ### Why is the util named as daneel
