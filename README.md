@@ -56,7 +56,7 @@ $ Input my property pairs (label and variable)
 - `{{label}}`: A label inputed in daneel-cli.
 - `{{variable}}`: A variable inputed in daneel-cli.
 - `{{#pairs}}`: An array contains `{{label}}` and `{{variable}}` just like `[{label: Name, variable: name}]`.
-- `{{}}`: The end tag of `{{#pairs}}`.
+- `{{pairs}}`: The end tag of `{{#pairs}}`.
 3. You can write all the tags above everywhere in your template.
 
 ### Example
