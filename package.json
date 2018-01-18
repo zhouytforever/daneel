@@ -1,6 +1,6 @@
 {
   "name": "daneel",
-  "version": "0.0.5",
+  "version": "0.1.1",
   "description": "A cli tool for you to create a module of code from a template (e.g CURD)",
   "bin": {
     "daneel": "bin/daneel"
