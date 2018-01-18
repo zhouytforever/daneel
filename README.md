@@ -7,8 +7,7 @@ A simple CLI for scaffolding code fragment.(A code generator from your custom te
 ### Who need this ?
 1. A lazzy guy
 2. Who usually write the same code (e.g CURD)
-3. It's better if you use vue
-4. Who can write a custom template by himself
+3. Who can write a custom template by himself
 
 ### Installation
 Prerequisites: [Node.js](https://nodejs.org/en/) (>=4.x, 6.x preferred), npm version 3+ and [Git](https://git-scm.com/).
@@ -53,46 +52,54 @@ $ Input my property pairs (label and variable)
 
 1. Your template repository or directory is all you'll get.
 2. All you need to care about is several tags below:
-- `{{label}}`: A label inputed in daneel-cli.
-- `{{variable}}`: A variable inputed in daneel-cli.
-- `{{#pairs}}`: An array contains `{{label}}` and `{{variable}}` just like `[{label: Name, variable: name}]`.
-- `{{pairs}}`: The end tag of `{{#pairs}}`.
+    - `{{label}}`: A label inputed in daneel-cli.
+    - `{{variable}}`: A variable inputed in daneel-cli.
+    - `{{#pairs}}`: An array contains `{{label}}` and `{{variable}}` just like `[{label: Name, variable: name}]`.
+    - `{{pairs}}`: The end tag of `{{#pairs}}`.
 3. You can write all the tags above everywhere in your template.
 
 ### Example
 
-Template you written :
+Template you defined :
 ```bash
-  <section class="search-panel">
-    <Form inline :label-width="100">
-      {{#pairs}}
-      <FormItem label="{{label}}" prop="{{variable}}">
-        <Input v-model="searchCondition.{{variable}}" />
-      </FormItem>
-      {{/pairs}}
-      <FormItem>
-        <Button type="primary" @click="onSearch">查询</Button>
-        <Button @click="() => { this.onSearch(true) }">重置</Button>
-      </FormItem>
-    </Form>
-  </section>
+<Form inline :label-width="100">
+  {{#pairs}}
+  <FormItem label="{{label}}" prop="{{variable}}">
+    <Input v-model="searchCondition.{{variable}}" />
+  </FormItem>
+  {{/pairs}}
+  <FormItem>
+    <Button type="primary" @click="onSearch">查询</Button>
+    <Button @click="() => { this.onSearch(true) }">重置</Button>
+  </FormItem>
+</Form>
 ```
+
+Command you inputed :
+```bash
+$ daneel daneel-template
+? Please input your property label.(e.g 名字): $ 名字
+? Please input your property variable.(e.g name): $ name
+? Need next pair ? $ y
+? Please input your property label.(e.g 名字): $ 性别
+? Please input your property variable.(e.g name): $ sex
+? Need next pair ? $ n
+```
+
 Code daneel generated :
 ```bash
-  <section class="search-panel">
-    <Form inline :label-width="100">
-      <FormItem label="名字" prop="name">
-        <Input v-model="searchCondition.name" />
-      </FormItem>
-      <FormItem label="性别" prop="sex">
-        <Input v-model="searchCondition.sex" />
-      </FormItem>
-      <FormItem>
-        <Button type="primary" @click="onSearch">查询</Button>
-        <Button @click="() => { this.onSearch(true) }">重置</Button>
-      </FormItem>
-    </Form>
-  </section>
+<Form inline :label-width="100">
+  <FormItem label="名字" prop="name">
+    <Input v-model="searchCondition.name" />
+  </FormItem>
+  <FormItem label="性别" prop="sex">
+    <Input v-model="searchCondition.sex" />
+  </FormItem>
+  <FormItem>
+    <Button type="primary" @click="onSearch">查询</Button>
+    <Button @click="() => { this.onSearch(true) }">重置</Button>
+  </FormItem>
+</Form>
 ```
 
 ### Why is the util named as daneel
