@@ -103,7 +103,7 @@ Code daneel generated :
 ```
 ### F.A.Q.
 Q1. What about `{{label}}` without replacement
-> Just write `\{{label}}` wherever you want
+> Just write `\{{label}}` wherever you want in your template
 
 Q2. Why is the util named as daneel
 > It's a util created to help code like a robot
