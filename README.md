@@ -101,13 +101,16 @@ Code daneel generated :
   </FormItem>
 </Form>
 ```
+### F.A.Q.
+Q1. What about `{{label}}` without replacement
+> Just write `\{{label}}` wherever you want
 
-### Why is the util named as daneel
-It's a util created to help code like a robot
-
-A robot should like :
-- [R. Daneel Olivaw](https://en.wikipedia.org/wiki/R._Daneel_Olivaw)
-- [(中文)机·丹尼尔·奥利瓦](https://baike.baidu.com/item/%E6%9C%BA%C2%B7%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E5%A5%A5%E5%88%A9%E7%93%A6/6871736?fr=aladdin)
+Q2. Why is the util named as daneel
+> It's a util created to help code like a robot
+>
+> A robot should like :
+> - [R. Daneel Olivaw](https://en.wikipedia.org/wiki/R._Daneel_Olivaw)
+> - [(中文)机·丹尼尔·奥利瓦](https://baike.baidu.com/item/%E6%9C%BA%C2%B7%E4%B8%B9%E5%B0%BC%E5%B0%94%C2%B7%E5%A5%A5%E5%88%A9%E7%93%A6/6871736?fr=aladdin)
 
 ### License
 
