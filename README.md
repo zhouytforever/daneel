@@ -2,7 +2,11 @@
 
 A simple CLI for scaffolding code fragment.(A code generator from your custom template)
 
+Theoretically, you can generate any language code to release your hands which depends on your template
+
 一个代码片段生成工具。
+
+理论上，你可以用它生成任何语言的重复操作部分
 
 ### Who need this ?
 1. A lazzy guy
