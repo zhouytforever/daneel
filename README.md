@@ -28,21 +28,21 @@ After you've created a project, you need lots of the same code for business modu
 $ cd <Your business directory>
 $ daneel daneel-template[#<branch-name>]
 ```
-**Input your property pairs (label and variable)**
+Input your property pairs (label and variable)
 
 - From other template repository
 ``` bash
 $ cd <Your business directory>
 $ daneel <github-name>/<template-project-name>[#<branch-name>]
 ```
-**Input your property pairs (label and variable)**
+Input your property pairs (label and variable)
 
 - From local template
 ``` bash
 $ cd <Your business directory>
 $ daneel <Your template directory (absolute path or relative path)>
 ```
-**Input your property pairs (label and variable)**
+Input your property pairs (label and variable)
 
 >More usage: [download-git-repo](https://github.com/flipxfx/download-git-repo)
 
